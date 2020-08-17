@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<!-- Arquivo .CSS do calendario -->
+		<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+			<!-- Arquivo .JS do calendario -->
+		<script src="JS/calendario.js"></script>
+			<!-- Título do Projeto -->
+		<title>Calendário ProgWeb</title>	
+	</head>
+<body>
+	<div class="fundo">
+		<div class="calendario">
+			<div class="mes_infos_tudo">
+				<div class="anterior">
+					<button onclick="prev()">&#10094</button>
+				</div>
+				<div id = "mes">
+				</div>
+				<div class="proximo">
+					<button onclick="next()">&#10095</button>
+				</div>
+			</div>
+			<div class="semanas">
+				<div>Dom</div>
+				<div>Seg</div>
+				<div>Ter</div>
+				<div>Qua</div>
+				<div>Qui</div>
+				<div>Sex</div>
+				<div>Sab</div>
+			</div>
+			<div class="dias" id="dias">
+			</div>
+		</div>
+	</div>
+
+<!--form-->
+	<div class="fundoADD">
+		<h2 class="event">Adicione um evento</h2>
+		
+		<form id="form1" >
+	        <ul id="addEvento">
+	            <li>
+	                <label id="data1">Data:</label>
+	                <input type="date" id="data" name="data"/>
+	            </li>
+	            <li>
+	                <label id="descricao1">Descrição:</label>
+	                <input type="text" id="descricao" name="descricao"/>
+	            </li>
+	            <li id="salvar">
+	                <button id="bSalvar" onclick="salvar()">Salvar</button>
+	            </li>
+	        </ul>
+		</form>
+		
+		<hr />
+	    <h2 class="event">Eventos Cadastrados</h2>
+	  
+	    <section>
+	        <table id="tabelaDeDados">
+	            <br/>
+	            <thead id="valoresTabela">
+	                <tr id="event2">
+	                    <th id="data2">Data</th>
+	                    <th id="descricao">Descrição</th>
+	                    <th id="remover">Remover</th>
+	                </tr>
+	            </thead>
+
+	            <tbody id="lista">
+	            </tbody>
+	        </table>
+	    </section>
+	</div>
+	<hr />
+
+	<div class="tituloLegenda">
+		<p>Legenda</p>
+	</div>
+	<div class="legenda">
+		<p>Dia atual:</p><div class="quadradoLaranja"></div>
+	</div>
+	<div class="legenda">
+		<p>Dia atual com Evento:</p><div class="quadradoVerde"></div>
+	</div>
+	<div class="legenda">
+		<p>Evento:</p><div class="quadradoAzul"></div>
+	</div>
+	<div>
+		<h4 class="patrocinio">By: Grupo<span style="color: #FF8000;">7</span></h4>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: "Arial", "Helvetica", "sans-serif";
+	background-color: #dfe6e9;
+}
+
+#mes-topo{
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.patrocinio{
+	text-align: center;
+	background-color: #dfe6e9;
+	color: black;
+	font-size: 1.4em;
+	padding: 50px 0;
+}
+
+.fundo{
+	display: flex;
+	width: 100vw;
+	height: 70vh;
+	background-color: #dfe6e9;
+}
+
+.calendario{
+	margin: auto;
+	width: 600px;
+	background-color: #fff;
+	box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+}
+
+.mes_infos_tudo{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	text-align: center;
+	background-color: #FF8000;
+	color: #fff;
+	padding: 40px 30px;
+}
+
+.semanas{
+	display: flex;
+	background-color: #B45F04;
+	color: #fff;
+	padding: 7px 0;
+}
+
+.dias{
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: 300;
+	padding: 10px 0;
+}
+
+.dias div{
+	padding: 10px 0;
+	margin-bottom: 10px;
+	transition: all 0.4s;
+	cursor: pointer;
+}
+
+.dias div:hover{
+	background-color: #dfe6e9;
+}
+
+.dia-anterior{
+	color:gray;
+}
+
+.semanas div, .dias div{
+	width: 14.28%;
+	text-align: center;
+}
+
+.hoje{
+	background-color: #FF8000;
+	color: #fff;
+}
+
+.evento{
+	background-color: #0A82B8;
+	color: #FFFFFF;
+}
+
+#bSalvar{
+	font-family:arial;
+	text-transform: uppercase;
+	cursor: pointer;
+	box-shadow: 1px 2px 1px;
+	font-weight: bold;
+	border-radius: 7px;
+}
+#bSalvar:hover{
+	background-color: #FF8000;
+}
+#bSalvar:active{
+	position: relative;
+	top:2px;
+	box-shadow: none;
+	
+}
+#event{
+	position: absolute;
+	text-align: center;
+}
+
+.eventos{
+	display: flex;
+	width: 100vw;
+	height: 70vh;
+	background-color: #dfe6e9;
+}
+.fundoADD{
+	font-size: 18px;
+	font-family: sans-serif;
+	background-color: #dfe6e9;
+	text-align: center;
+}
+
+#cssEventosCadastrados{
+	margin: auto;
+	width: 600px;
+	background-color: #fff;
+	border: solid red 1px;
+}
+
+#addEvento{
+	list-style: none;
+	margin-left: 50px;
+	margin-bottom: 19px;
+	margin-top: 8px;
+}
+#addEvento li{
+	display: inline;
+	
+}
+#descricao1{
+	padding-left: 20px;
+}
+#salvar{
+	padding-right: 80px;
+}
+
+
+.event{
+	padding-bottom: 30px;
+	padding-top: 30px;
+
+}
+
+#tabelaDeDados{
+	padding-left: 457px;
+	padding-bottom: 30px;
+	padding-top: 40px;
+}
+th{
+	padding-right: 120px;
+	position: inherit;
+	text-align: center;
+	
+}
+.hojeEvento{
+	background-color: #1CFF00;
+	color: #FFFFFF;
+}
+
+.quadradoVerde {
+  	margin-left: 10px;
+  	background-color: #1CFF00;
+  	height: 20px;
+	width: 20px;
+	border: 1px solid black;
+}
+
+.tituloLegenda{
+	padding-top: 30px;
+	font-size: 1.5em;
+	text-align: center;
+}
+.legenda {
+	padding-left: 457px;
+	padding-bottom: 0px;
+	padding-top: 20px;
+	font-size: 1.2em;
+	display: flex;
+}
+
+.quadradoLaranja{
+	margin-left: 10px;
+  	background-color: #FF8000;
+  	height: 20px;
+	width: 20px;
+	border: 1px solid black;
+}
+
+.quadradoAzul{
+	margin-left: 10px;
+  	background-color: #0A82B8;
+  	height: 20px;
+	width: 20px;
+	border: 1px solid black;
+}
+
